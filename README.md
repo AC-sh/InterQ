@@ -18,7 +18,7 @@ InterQ learns when to transmit sensor measurements to a remote controller. It us
 
 ## 📖 Problem Setting
 
-We consider a discrete-time linear stochastic system with two agents:
+We consider a discrete-time linear stochastic system with two active decision-makers:
 
 - **Scheduler**: Observes the full system state and decides when to transmit data  
 - **Controller**: Receives transmissions and applies control actions
