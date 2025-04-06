@@ -10,7 +10,7 @@ InterQ learns when to transmit sensor measurements to a remote controller. It us
 
 - ✅ Deep Q-Network (DQN) for optimal scheduling  
 - ✅ Separation-based controller design (certainty-equivalence)  
-- ✅ Experience Replay and Target Networks for stable training  
+- ✅ Experience Replay and slow target network update for stable training  
 - ✅ Visualizations of scheduling policy landscapes  
 - ✅ Benchmarking against baseline policies (periodic and event-triggered)
 
@@ -43,29 +43,26 @@ The controller follows an optimal certainty-equivalence strategy based on its cu
 - Control-Communication Tradeoff: Compare against periodic and event-based policies
 - Pareto Fronts: Quantify optimality in multi-objective space
 
+---
+
 ## 🧪 Baselines
 
 Compare InterQ against:
 - BS1: Periodic scheduling with fixed interval
 - BS2: Event-triggered scheduling based on thresholded estimation error
 
-  ## 📈 Results
+## 📈 Results
 
 InterQ consistently outperforms both baselines across a wide range of system parameters and penalty weights. It learns an intelligent policy that balances control accuracy with communication cost.
 
 ## 📝 Citation
 
 If you use this code for your research or publication, please cite:
+
 @article{interq2025,
-  title     = {InterQ: A DQN Framework for Optimal Intermittent Control},
-  author    = {Aggarwal, Shubham and Maity, Dipankar and Ba\c{s}ar, Tamer},
-  journal   = {arXiv preprint},
+  title     = {InterQ: A DQN Framework for Optimal Intermittent Control},  
+  author    = {Aggarwal, Shubham and Maity, Dipankar and Ba\c{s}ar, Tamer},  
+  journal   = {arXiv preprint},  
   year      = {2025}
 }
-
-## 📬 Contact
-
-For questions or collaboration, feel free to reach out:
-
-Shubham Aggarwal – sa57@illinois.edu
 
