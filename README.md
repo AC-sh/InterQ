@@ -3,7 +3,7 @@
 **InterQ** is a Python implementation of a Deep Q-Learning (DQN) based algorithm for solving optimal scheduling and control in stochastic linear systems. The framework is designed for **intermittent control problems** where communication between a sensor and a controller is costly or constrained.
 
 InterQ learns when to transmit sensor measurements to a remote controller. It uses deep reinforcement learning to find a Pareto-optimal trade-off between control performance and communication cost.
-📎 **[See paper for details](https://arxiv.org/pdf/2504.09035)**  
+📎 **[See arXiv preprint for details](https://arxiv.org/pdf/2504.09035)**  
 
 ---
 
