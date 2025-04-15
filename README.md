@@ -55,6 +55,8 @@ Compare InterQ against:
 
 InterQ consistently outperforms both baselines across a wide range of system parameters and penalty weights. It learns an intelligent policy that balances control accuracy with communication cost.
 
+![InterQ Overview](ellipses_errors.png)
+
 ## 📝 Citation
 
 If you use this code for your research or publication, please cite:
@@ -62,7 +64,7 @@ If you use this code for your research or publication, please cite:
 @article{interq2025,
   title     = {InterQ: A DQN Framework for Optimal Intermittent Control},  
   author    = {Aggarwal, Shubham and Maity, Dipankar and Ba\c{s}ar, Tamer},  
-  journal   = {arXiv preprint},  
+  journal   = {arXiv preprint arXiv:2504.09035},  
   year      = {2025}
 }
 
