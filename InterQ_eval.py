@@ -93,8 +93,8 @@ for num in range(n_samples):
     # Compute control
     u = -K @ x_hat
 
-    control_cost += (x_true.T @ Q @ x_true + u.T @ R @ u).item()
-    scheduling_cost += lambda_comm * action
+    control_cost = control_cost * gamma + (x_true.T @ Q @ x_true + u.T @ R @ u).item()
+    scheduling_cost = scheduling_cost * gamma + lambda_comm * action
 
     trajectory_true.append(x_true)
     trajectory_est.append(x_hat)
@@ -111,8 +111,8 @@ for num in range(n_samples):
   trajectory_est = np.hstack(trajectory_est)
   sum_len += len(communication_instants) / N
 
-  ep_control_cost = gamma * ep_control_cost + control_cost
-  ep_sch_cost = gamma * ep_sch_cost + scheduling_cost
+  ep_control_cost += control_cost
+  ep_sch_cost += scheduling_cost
 
 avg_period = sum_len / n_samples
 
